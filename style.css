@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #ccee66;
+    color: #ffffff;
+    padding: 20px 160px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    background-color: #202020;
+    position: absolute;
+    top: 0;
+    left: -550px;
+    transform: rotate(-70deg);
+    width: 100%;
+    height: 150%;
+    z-index: -2;
+}
+
+body::after {
+    content: 'Nike';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    font-weight: bold;
+    color: #000;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 80px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    line-height: 70px;
+}
+
+p {
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+
+.botao-carrinho {
+    background-color: #ccee66;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.botao-carrinho:hover {
+    opacity: 0.7;
+}
+
+.produto-imagem {
+    width: 600px;
+    transform: rotate(-25deg);
+    filter: drop-shadow(20px 20px 30px hsla(0, 0%, 9%, 0.411));
+}
+
+.troca-img {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
+    transition: all 0.5s;
+}
+
+.caixa-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    margin-top: 20px;
+}
+
+.caixa-texto {
+    max-width: 400px;
+}
+
+.caixa-botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botoes {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.botoes:hover {
+    border: solid 3px hsla(0, 0%, 100%, 0.841);
+    transform: translateY(-4px);
+}
+
+.botoes:active {
+    opacity: 0.7;
+}
+
+.verde {
+    background-color: #ccee66;
+}
+
+.azul {
+    background-color: #58cced;
+}
+
+.rosa {
+    background-color: #ff9eb5;
+}
